@@ -1,0 +1,22 @@
+sudo: required
+language: node_js
+node_js:
+- '10.1'
+install:
+- npm install
+# run tests
+script:
+- npm test
+after_success:
+- npm cache clean
+- sh $TRAVIS_BUILD_DIR/.travis/version.sh
+- sleep 5s
+# publish to npm
+deploy:
+  skip_cleanup: true
+  provider: npm
+  email: $NPM_EMAIL
+  api_key: $NPM_TOKEN
+  on:
+    branch: release
+    tags: false
