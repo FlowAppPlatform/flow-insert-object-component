@@ -1,0 +1,31 @@
+{
+  "name": "flow-insert-object-component",
+  "description": "Component to insert objects into CB for use with the Flow SDK",
+  "main": "./insert.js",
+  "scripts": {
+    "test": "eslint ./api insert.js --fix && cross-env NODE_ENV='testing' ./node_modules/mocha/bin/mocha tests.js"
+  },
+  "dependencies": {
+    "cloudboost": "^2.0.264",
+    "cross-env": "^5.2.0",
+    "flow-platform-sdk": "^1.3.1",
+    "q": "^1.5.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.4.0",
+    "mocha": "^5.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FlowAppPlatform/flow-insert-object-component.git"
+  },
+  "keywords": [
+    "cloudboost"
+  ],
+  "author": "Hackerbay Inc. <hello@hackerbay.io>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/FlowAppPlatform/flow-insert-object-component/issues"
+  },
+  "homepage": "https://github.com/FlowAppPlatform/flow-insert-object-component#readme"
+}

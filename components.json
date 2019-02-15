@@ -1,0 +1,100 @@
+{
+  "flow-insert-object-component": {
+    "graphComponentId": "flow-insert-object-component",
+    "title": "Save Object",
+    "category": "Actions",
+    "imgSrc": "assets/images/icons/save.svg",
+    "type": "graphComponent",
+    "file": "insert.js",
+    "executionPlatform": ["server", "client"],
+    "metadata": {
+      "icon-color": "#7ab260"
+    },
+    "ports": [
+      {
+        "id": "Success",
+        "title": "Success",
+        "description": "Denotes the state when the task is successfully done",
+        "properties": [
+          {
+            "categoryName": "General",
+            "categoryDescription": "Basic settings about this port",
+            "properties": [
+              {
+                "id": "Data",
+                "name": "Data",
+                "type": "object",
+                "data": null,
+                "options": { "required": true }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Error",
+        "title": "Error",
+        "description": "Denotes the state when an error occurs",
+        "properties": [
+          {
+            "categoryName": "General",
+            "categoryDescription": "Basic settings about this port",
+            "properties": [
+              {
+                "id": "Data",
+                "name": "Error",
+                "type": "object",
+                "data": null,
+                "options": { "required": true }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "properties": [
+      {
+        "categoryName": "General",
+        "categoryDescription": "Basic settings about the save component",
+        "properties": [
+          {
+            "id": "Table",
+            "name": "Table",
+            "type": "text",
+            "data": null,
+            "options": { "required": true }
+          },
+          {
+            "id": "Documents",
+            "name": "Documents",
+            "type": "list",
+            "data": null,
+            "options": { "required": false }
+          }
+        ]
+      }, 
+      {
+        "categoryName": "Advanced",
+        "categoryDescription": "API settings for Cloudboost",
+        "properties": [
+          {
+            "id": "APP_ID",
+            "name": "App ID",
+            "type": "text",
+            "data": null,
+            "options": { "required": true, "global": true }
+          },
+          {
+            "id": "CLIENT_KEY",
+            "name": "Client Key",
+            "type": "text",
+            "data": null,
+            "options": { "required": true, "global": true }
+          }
+        ]
+      }
+    ],
+    "showOnComponentsPanel": true,
+    "isDeletable": true
+  }
+}
