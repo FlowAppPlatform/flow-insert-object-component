@@ -1,7 +1,7 @@
 {
   "flow-insert-object-component": {
     "graphComponentId": "flow-insert-object-component",
-    "title": "Save Object",
+    "title": "Save Objects",
     "category": "Actions",
     "imgSrc": "assets/images/icons/save.svg",
     "type": "graphComponent",
@@ -60,36 +60,38 @@
           {
             "id": "Table",
             "name": "Table",
-            "type": "text",
+            "type": "table",
             "data": null,
             "options": { "required": true }
           },
           {
-            "id": "Documents",
-            "name": "Documents",
-            "type": "list",
+            "id": "Data",
+            "name": "Object to save",
+            "type": "text",
+            "form": "column-value-pair-form",
             "data": null,
-            "options": { "required": false }
+            "options": { "required": true }
           }
         ]
-      }, 
+      },
       {
         "categoryName": "Advanced",
         "categoryDescription": "API settings for Cloudboost",
+        "areAppCredentials": true,
         "properties": [
           {
             "id": "APP_ID",
             "name": "App ID",
             "type": "text",
             "data": null,
-            "options": { "required": true, "global": true }
+            "options": { "static": true, "required": true, "global": true }
           },
           {
             "id": "CLIENT_KEY",
             "name": "Client Key",
             "type": "text",
             "data": null,
-            "options": { "required": true, "global": true }
+            "options": { "static": true, "required": true, "global": true }
           }
         ]
       }
