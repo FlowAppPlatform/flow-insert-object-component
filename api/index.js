@@ -24,7 +24,8 @@ class API {
     if (!documents.length) return new Error('No documents specified');
     const objects = documents.map(document => {
       const object = new this.CB.CloudObject(this.TABLE);
-      Object.keys(document).forEach(key => object.set(key, document[key]));
+      // ignore dynamic properties
+      Object.keys(document).forEach(key => key.charAt(0) !== '@' && object.set(key, document[key]));
       return object;
     });
     return this.CB.CloudObject.saveAll(objects);
