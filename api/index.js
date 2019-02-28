@@ -1,7 +1,7 @@
-var CB = CB || require('cloudboost');
+var CB = global.CB || require('cloudboost');
 
-// omit for production, i.e. when environment is specified
-if (Boolean(process.env.NODE_ENV) === false)
+// omit for production
+if (process.env.NODE_ENV !== 'production')
   CB.apiUrl   = 'http://localhost:4730';
 
 class API {
