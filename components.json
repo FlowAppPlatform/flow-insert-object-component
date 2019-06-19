@@ -3,7 +3,7 @@
     "graphComponentId": "flow-insert-object-component",
     "title": "Save Object",
     "category": "Database",
-    "imgSrc": "assets/images/icons/save-white.svg",
+    "imgSrc": "assets/images/icons/cb-save.svg",
     "type": "graphComponent",
     "file": "insert.js",
     "executionPlatform": ["server", "client"],
