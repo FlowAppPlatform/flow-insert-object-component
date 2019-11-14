@@ -14,7 +14,7 @@
       {
         "id": "Success",
         "title": "Success",
-        "color": "#3bc105",
+        "color": "#359ef4",
         "description": "Denotes the state when the task is successfully done",
         "properties": [
           {
@@ -35,7 +35,7 @@
       {
         "id": "Error",
         "title": "Error",
-        "color": "#f4ce42",
+        "color": "#C83838",
         "description": "Denotes the state when an error occurs",
         "properties": [
           {
